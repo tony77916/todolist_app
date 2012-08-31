@@ -26,8 +26,11 @@ input[type="checkbox"] {
     position: fixed;
 }
 .navbar {
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .close {
     font-size: 90%;
+}
+.list-font {
+    font-size: 130%;
 }

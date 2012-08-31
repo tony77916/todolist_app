@@ -13,7 +13,7 @@
 <body>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
-            <div class="container">
+            <div class="span6 offset3">
                 <a class="brand" href="./index.html"><i class="icon-arrow-left"></i>工作清單</a>
                 <ul class="nav">
                     <li class="dropdown">
@@ -22,55 +22,47 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="#">進行中的工作</a>
+                                <a href="#">清單</a>
                             </li>
                             <li>
-                                <a href="#">今天</a>
+                                <a href="#">已完成</a>
                             </li>
                             <li>
-                                <a href="#">最近修改過</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li class="nav-header">
-                                <h4>設定</h4>
-                            </li>
-                            <li>
-                                <a href="#">語言</a>
-                            </li>
-                            <li>
-                                <a href="#">幫助</a>
-                            </li>
-                            <li>
-                                <a href="#">關於</a>
+                                <a href="#">刪除</a>
                             </li>
                         </ul>
-                    <li>
-                        <form class="navbar-search pull-left">
-                            <input class="span2 search-query" type="text" placeholder="搜尋">
-                        </form>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="span12 content">
-                <div class="alert alert-success">
-                    <a class="close" type="button">2012/08/30 09:00am</a>
+        <div class="row content">
+            <div class="span6 offset3">
+                <div class="alert alert-success list-font">
+                    <a class="accordion-toggle close" href="#edit" data-parent="#accordion2" data-toggle="collapse"><i class="icon-pencil"></i>編輯</a>
                     <dl>
                         <dt>Eat breakfast！</dt>
                         <dd>去丹丹漢堡早餐約會！</dd>
                     </dl>
                     <div id="accordion2" class="accordion">
                         <div class="accordion-group">
-                            <div class="accordion-heading">
-                                <a class="accordion-toggle close" href="#edit" data-parent="#accordion2" data-toggle="collapse"><i class="icon-pencil"></i>編輯</a>
-                            </div>
-                            <div id="edit" class="accordion-body collapse" style="height: 0px;">
+                            <div id="edit" class="accordion-body collapse">
                                 <div class="accordion-inner">
-                                    <input class="span10" type="text" placeholder="標題">
-                                    <textarea class="span10" rows="3" placeholder="內容"></textarea>
+                                    <div class="input-append">
+                                        <input class="span1" type="text" value="2012">
+                                        <span class="add-on">年</span>
+                                        <input class="span1" type="text" value="08">
+                                        <span class="add-on">月</span>
+                                        <input class="span1" type="text" value="31">
+                                        <span class="add-on">日</span>
+                                        <input class="span1" type="text" value="09">
+                                        <span class="add-on">點</span>
+                                        <input class="span1" type="text" value="15">
+                                        <span class="add-on">分</span>
+                                    </div>
+                                    <input class="span5" type="text" value="Eat breakfast！">
+                                    <textarea class="span5" rows="3">去丹丹漢堡早餐約會！</textarea>
                                     <button type="submit" class="btn btn-primary">儲存</button>
                                 </div>
                             </div>

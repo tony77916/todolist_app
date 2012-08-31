@@ -56,9 +56,9 @@
                                         <span class="add-on">月</span>
                                         <input class="span1" type="text" value="31">
                                         <span class="add-on">日</span>
-                                        <input class="span1" type="text" value="21">
+                                        <input class="span1" type="text" value="09">
                                         <span class="add-on">點</span>
-                                        <input class="span1" type="text" value="42">
+                                        <input class="span1" type="text" value="15">
                                         <span class="add-on">分</span>
                                     </div>
                                     <input class="span5" type="text" value="Sleep！">
