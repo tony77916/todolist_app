@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Just Do It!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link href="css/bootstrap.css"rel="stylesheet"type="text/css">
+    <link href="css/bootstrap-responsive.css"rel="stylesheet"type="text/css">
+    <link href="css/todolist.css"rel="stylesheet"type="text/css">
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="./index.html"><i class="icon-arrow-left"></i>工作清單</a>
+                <ul class="nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">選單
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">進行中的工作</a>
+                            </li>
+                            <li>
+                                <a href="#">今天</a>
+                            </li>
+                            <li>
+                                <a href="#">最近修改過</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="nav-header">
+                                <h4>設定</h4>
+                            </li>
+                            <li>
+                                <a href="#">語言</a>
+                            </li>
+                            <li>
+                                <a href="#">幫助</a>
+                            </li>
+                            <li>
+                                <a href="#">關於</a>
+                            </li>
+                        </ul>
+                    <li>
+                        <form class="navbar-search pull-left">
+                            <input class="span2 search-query" type="text" placeholder="搜尋">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="span12 content">
+                <div class="alert alert-error">
+                    <a class="close" type="button">2012/08/30 10:00pm</a>
+                    <dl>
+                        <dt>Sleep！</dt>
+                        <dd>今天早點睡明天才有精神拼命！</dd>
+                    </dl>
+                    <div id="accordion2" class="accordion">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle close" href="#edit" data-parent="#accordion2" data-toggle="collapse"><i class="icon-pencil"></i>編輯</a>
+                            </div>
+                            <div id="edit" class="accordion-body collapse" style="height: 0px;">
+                                <div class="accordion-inner">
+                                    <input class="span10" type="text" placeholder="標題">
+                                    <textarea class="span10" rows="3" placeholder="內容"></textarea>
+                                    <button type="submit" class="btn btn-primary">儲存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
