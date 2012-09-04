@@ -9,6 +9,7 @@
 }
 .msgbox {
     white-space: nowrap;
+    padding-left: 20px;
 }
 .msgbox2 {
     margin-top: 7px;
@@ -24,12 +25,6 @@ input[type="checkbox"] {
 }
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: fixed;
-}
-.navbar {
-    padding-left: 20px;
-}
-.close {
-    font-size: 90%;
 }
 .list-font {
     font-size: 130%;
