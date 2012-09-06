@@ -27,5 +27,8 @@ input[type="checkbox"] {
     position: fixed;
 }
 .list-font {
-    font-size: 130%;
+    font-size: 120%;
+}
+.accordion-group {
+    border: 0px;
 }

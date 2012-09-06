@@ -1,67 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Just Do It!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
-    <link href="css/bootstrap.css"rel="stylesheet"type="text/css">
-    <link href="css/bootstrap-responsive.css"rel="stylesheet"type="text/css">
-    <link href="css/todolist.css"rel="stylesheet"type="text/css">
-    <script src="js/jquery-1.7.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-</head>
-<body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="span6 offset3">
-                <a class="brand" href="./index.html"><i class="icon-arrow-left"></i>工作清單</a>
-                <ul class="nav">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">選單
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="#">清單</a>
-                            </li>
-                            <li>
-                                <a href="#">已完成</a>
-                            </li>
-                            <li>
-                                <a href="#">刪除</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+    <head>
+        <title>Just Do It!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <link href="css/bootstrap.css"rel="stylesheet"type="text/css">
+        <link href="css/bootstrap-responsive.css"rel="stylesheet"type="text/css">
+        <link href="css/todolist.css"rel="stylesheet"type="text/css">
+        <script src="js/jquery-1.7.2.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script language="javascript" type="text/javascript" src="datepicker/WdatePicker.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="span6 offset3 msgbox">
+                    <a class="brand" href="./index.html"><i class="icon-arrow-left"></i></a>
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">選單
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="./index.html">清單</a>
+                                </li>
+                                <li>
+                                    <a href="#">已完成</a>
+                                </li>
+                                <li>
+                                    <a href="#">刪除</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row content">
-            <div class="span6 offset3">
-                <div class="alert alert-success list-font">
-                    <a class="accordion-toggle close" href="#edit" data-parent="#accordion2" data-toggle="collapse"><i class="icon-pencil"></i>編輯</a>
-                    <dl>
-                        <dt>Eat breakfast！</dt>
-                        <dd>去丹丹漢堡早餐約會！</dd>
-                    </dl>
-                    <div id="accordion2" class="accordion">
-                        <div class="accordion-group">
-                            <div id="edit" class="accordion-body collapse">
-                                <div class="accordion-inner">
-                                        <input class="span1" type="text" value="2012">
-                                        <span class="add-on">年</span>
-                                        <input class="span1" type="text" value="08">
-                                        <span class="add-on">月</span>
-                                        <input class="span1" type="text" value="31">
-                                        <span class="add-on">日</span>
-                                        <input class="span1" type="text" value="09">
-                                        <span class="add-on">點</span>
-                                        <input class="span1" type="text" value="15">
-                                        <span class="add-on">分</span>
-                                    <input class="span5" type="text" value="Eat breakfast！">
-                                    <textarea class="span5" rows="3">去丹丹漢堡早餐約會！</textarea>
-                                    <button type="submit" class="btn btn-primary">儲存</button>
+        <div class="container">
+            <div class="row content">
+                <div class="span6 offset3">
+                    <div class="alert alert-success list-font">
+                        <a class="accordion-toggle close" href="#edit" data-parent="#accordion2" data-toggle="collapse"><i class="icon-pencil"></i>編輯</a>
+                        <input id="complete" type="checkbox">
+                        <div id="listtitle"></div>
+                        <div id="listmemo"></div>
+                        <div id="accordion2" class="accordion">
+                            <div class="accordion-group">
+                                <div id="edit" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <input id="time" class="Wdate" type="text" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" style="width:200px">
+                                        <textarea id="listmemo" class="span5" rows="3"></textarea>
+                                        <button type="submit" class="btn btn-primary">儲存</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,6 +60,5 @@
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

@@ -29,3 +29,6 @@ input[type="checkbox"] {
 .list-font {
     font-size: 120%;
 }
+.accordion-group,.accordion-inner {
+    border: 0px;
+}
